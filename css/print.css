@@ -28,7 +28,7 @@ header p {
 }
 
 .content {
-  page-break-inside:avoid; 
+  page-break-inside:avoid;
   page-break-after:auto;
 }
 
