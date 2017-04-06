@@ -270,14 +270,12 @@
                         {{/if}}
                       {{/if}}
                       {{#if area}}
-                        {{#if gpa}}
                         <p class="highlight">
                           {{#if studyType}}
                           {{studyType}}:
                           {{/if}}
-                          <i>{{area}} ({{gpa}})</i>
+                          <i>{{area}} {{#if gpa}}({{gpa}}){{/if}}</i>
                         </p>
-                        {{/if}}
                       {{/if}}
                     </div>
                   </div>
@@ -354,7 +352,7 @@
                       <span class="name">
                         {{#if name}}
                           <strong>
-                            {{name}}:
+                            {{name}}{{#if keywords.length}}:{{/if}}
                           </strong>
                         {{/if}}
                       </span>
