@@ -3,8 +3,10 @@ var Handlebars = require("handlebars");
 
 function render(resume) {
     // Load css and template
-    var css = fs.readFileSync(__dirname + "/css/style.css", "utf-8");
-    var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
+    var css_font_merriweather = fs.readFileSync(__dirname + "/css/font-merriweather.css", "utf-8");
+    var css_font_opensans =     fs.readFileSync(__dirname + "/css/font-opensans.css", "utf-8");
+    var css =                   fs.readFileSync(__dirname + "/css/style.css", "utf-8");
+    var template =              fs.readFileSync(__dirname + "/resume.template", "utf-8");
     // Load print-specific css
     var print = fs.readFileSync(__dirname + "/css/print.css", "utf-8");
 
@@ -54,6 +56,8 @@ function render(resume) {
     });
     // Compile
     return Handlebars.compile(template)({
+        css_font_merriweather: css_font_merriweather,
+        css_font_opensans: css_font_opensans,
         css: css,
         print: print,
         resume: resume
