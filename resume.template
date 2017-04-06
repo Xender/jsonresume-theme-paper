@@ -57,6 +57,7 @@
               </div>
             </div>
           </section>
+
           <!-- LOCATION -->
           {{#location}}
             {{#ifCond address '||' city}}
@@ -92,6 +93,7 @@
             {{/ifCond}}
           {{/location}}
       {{/resume.basics}}
+
         <!-- LANGUAGE -->
           {{#if resume.languages.length}}
             <section class="content">
@@ -114,6 +116,7 @@
               </div>
             </section>
           {{/if}}
+
           {{#resume.basics}}
             <!-- PROFILES -->
             {{#if profiles.length}}
@@ -139,6 +142,7 @@
               </section>
             {{/if}}
           {{/resume.basics}}
+
           {{#if resume.work.length}}
             {{#foreach resume.work}}
               {{#if $first}}
@@ -190,6 +194,7 @@
                 </section>
             {{/foreach}}
           {{/if}}
+
           {{#if resume.volunteer.length}}
             {{#each resume.volunteer}}
               <section class="content">
@@ -220,6 +225,7 @@
               </section>
             {{/each}}
           {{/if}}
+
           {{#if resume.education.length}}
             {{#foreach resume.education}}
               {{#if $first}}
@@ -261,6 +267,7 @@
                 </section>
             {{/foreach}}
           {{/if}}
+
           {{#if resume.awards.length}}
             {{#foreach resume.awards}}
               <section class="content">
@@ -288,6 +295,7 @@
               </section>
             {{/foreach}}
           {{/if}}
+
           {{#if resume.skills.length}}
           <section class="content">
             <div class="row">
@@ -316,6 +324,7 @@
             </div>
           </section>
           {{/if}}
+
           {{#if resume.interests.length}}
             <section class="content">
               <div class="row">
