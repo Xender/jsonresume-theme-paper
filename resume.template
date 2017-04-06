@@ -35,7 +35,7 @@
               <section class="content">
                 <div class="row">
                   <div class="content-cat">
-                    Birth
+                    Urodzony
                   </div>
                   {{!-- <div class="content-text work-listing education-listing"> --}}
                   <div class="content-text work-listing">
@@ -50,12 +50,12 @@
           <section class="content">
             <div class="row">
               <div class="content-cat">
-                Contact
+                Kontakt
               </div>
               <div class="content-text">
                 {{#if website}}
                   <ul>
-                    <li>Website</li>
+                    <li>WWW</li>
                     <li>{{website}}</li>
                   </ul>
                 {{/if}}
@@ -67,7 +67,7 @@
                 {{/if}}
                 {{#if phone}}
                   <ul>
-                    <li>Phone</li>
+                    <li>Telefon</li>
                     <li>{{phone}}</li>
                   </ul>
                 {{/if}}
@@ -81,26 +81,26 @@
               <section class="content">
                 <div class="row">
                   <div class="content-cat">
-                    Location
+                    Adres
                   </div>
                   <div class="content-text">
                     {{#if address}}
                       <ul>
-                        <li>Address</li>
+                        {{!-- <li>Adres</li> --}}
                         <li>{{address}}</li>
                       </ul>
                     {{/if}}
                     {{#if city}}
                       {{#if postalCode}}
                         <ul>
-                          <li>Postal Code & City</li>
+                          {{!-- <li>Postal Code & City</li> --}}
                           <li>{{postalCode}} {{city}}</li>
                         </ul>
                       {{/if}}
                     {{/if}}
                     {{#if region}}
                       <ul>
-                        <li>Region</li>
+                        {{!-- <li>Region</li> --}}
                         <li>{{region}}</li>
                       </ul>
                     {{/if}}
@@ -116,7 +116,7 @@
             <section class="content">
               <div class="row">
                 <div class="content-cat">
-                  Languages
+                  Języki
                 </div>
                 <div class="content-text">
                   {{#each resume.languages}}
@@ -140,7 +140,7 @@
               <section class="content profiles">
                 <div class="row">
                   <div class="content-cat">
-                    Profiles
+                    Profile społecznościowe
                   </div>
                   <div class="content-text profiles-listing">
                     <ul>
@@ -164,7 +164,7 @@
             <section class="content section-heading">
               <div class="row">
                 <div class="content-cat big-text">
-                    Work  Experience
+                    Doświadczenie zawodowe
                 </div>
                 <div class="content-text work-listing education-listing"></div>
               </div>
@@ -175,7 +175,7 @@
                     <div class="content-cat big-text">
                       {{#if startDate}}
                         {{#if endDate}}
-                          <p>{{startDate}} till {{endDate}}</p>
+                          <p>{{startDate}} - {{endDate}}</p>
                         {{/if}}
                       {{/if}}
                     </div>
@@ -184,11 +184,11 @@
                           <p>
                         {{#ifCond website '&&' company}}
                           <strong>{{position}}</strong>
-                          at <strong><a href="{{website}}">{{company}}:</a></strong>
+                          w <strong><a href="{{website}}">{{company}}:</a></strong>
                         {{else}}
                           {{#if company.length}}
                             <strong>{{position}}</strong>
-                            at <strong>{{company}}:</strong>
+                            w <strong>{{company}}:</strong>
                           {{else}}
                             <strong>{{position}}:</strong>
                           {{/if}}
@@ -219,7 +219,7 @@
                     {{/if}}
                     {{#if startDate}}
                       {{#if endDate}}
-                        <p>{{startDate}} till {{endDate}}</p>
+                        <p>{{startDate}} - {{endDate}}</p>
                       {{/if}}
                     {{/if}}
                   </div>
@@ -244,7 +244,7 @@
             <section class="content section-heading">
               <div class="row">
                 <div class="content-cat big-text">
-                    Education
+                    Wykształcenie
                 </div>
                 <div class="content-text work-listing education-listing"></div>
               </div>
@@ -255,7 +255,7 @@
                     <div class="content-cat big-text">
                       {{#if startDate}}
                         {{#if endDate}}
-                          <p>{{startDate}} till {{endDate}}</p>
+                          <p>{{startDate}} - {{endDate}}</p>
                         {{/if}}
                       {{/if}}
                     </div>
@@ -281,7 +281,7 @@
             <section class="content">
               <div class="row">
                 <div class="content-cat big-text">
-                    Awards
+                    Wyróżnienia
                 </div>
                 <div class="content-text work-listing"></div>
               </div>
@@ -314,7 +314,7 @@
           <section class="content">
             <div class="row">
               <div class="content-cat">
-                Skills
+                Umiejętności
               </div>
               <div class="content-text skills-listing">
                 {{#foreach resume.skills}}
@@ -343,7 +343,7 @@
             <section class="content">
               <div class="row">
                 <div class="content-cat">
-                  Interests
+                  Zainteresowania
                 </div>
                 <div class="content-text skills-listing">
                   {{#foreach resume.interests}}
